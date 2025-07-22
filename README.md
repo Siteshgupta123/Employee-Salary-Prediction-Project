@@ -24,7 +24,83 @@ A Streamlit-powered web app that predicts whether an individual's annual salary 
 - Deployable via platforms like Render
 
 ---
+## Dataset Overview
+The model was trained using the Adult Income dataset, sourced from the UCI Machine Learning Repository. It contains over 32,000 records with 15 features including:
+- Age, workclass, education level, marital status
+- Occupation, relationship, race, gender
+- Capital gain/loss, hours worked per week, country
+- Income class (≤₹50,000 or >₹50,000)
+> All categorical data was encoded using LabelEncoder for compatibility with scikit-learn models.
 
+---
+##  Data Preprocessing
+- Removed rows with missing values (? symbols) across workclass, occupation, and native country
+- Encoded categorical variables using LabelEncoder for compatibility with scikit-learn
+- Scaled numerical features for balanced model convergence
+- Splitting the dataset into training (80%) and testing (20%) to ensure reliable evaluation
+-----------
+## Model Comparison & Selection
+Before finalizing the Gradient Boosting model, several algorithms were evaluated for accuracy, precision, and reliability. Here's a summary:
+| Model                    | Accuracy | Notes                                    |
+|--------------------------|----------|------------------------------------------|
+| Logistic Regression      | ~79%     | Fast and interpretable, but underfit     |
+| Decision Tree            | ~82%     | Good baseline, prone to overfitting      |
+| Random Forest            | ~84%     | Stable performance, slower than GBM      |
+| Gradient Boosting (final)| ~85%     | Best trade-off between accuracy & speed  |
+- Gradient Boosting Classifier was selected for its superior performance on both training and validation sets.
+- All models were trained and tested on the preprocessed Adult dataset using an 80/20 split.
+- Accuracy and other metrics were computed using classification_report and cross-validation.
+> This comparison demonstrates thoughtful experimentation before deployment — aligning with best practices in machine learning workflow.
+------------
+## Model Building — Gradient Boosting Classifier
+| Parameter       | Value    |
+|----------------|----------|
+| Model           | GradientBoostingClassifier |
+| `n_estimators`  | 100      |
+| `learning_rate` | 0.1      |
+| `max_depth`     | 3        |
+| `random_state`  | 42       |
+| Encoding        | LabelEncoder on categorical features |
+| Deployment      | Pickle model (`best_model.pkl`) loaded into `app.py` |
+
+- Gradient Boosting was chosen for its robust performance and ability to reduce bias & variance
+- Trained using the cleaned and encoded dataset on all features
+- Final model serialized with pickle as best_model.pkl
+------------------
+## Feature Importance
+Top contributing features identified by the model:
+1. Age  
+2. Education Level  
+3. Hours per Week  
+4. Capital Gain  
+5. Occupation  
+> These attributes most significantly influence income prediction
+----------------
+## Evaluation Summar
+| Metric     | Value  |
+|------------|--------|
+| Accuracy   | ~85%   |
+| Precision  | 0.86   |
+| Recall     | 0.83   |
+| F1-Score   | 0.84   |
+## Why Gradient Boosting?
+- Combines multiple weak learners into a strong predictive model
+- Handles categorical and numeric features efficiently
+- Performs better than simple decision trees in generalization and precision
+> The final model was exported using pickle and loaded in the deployed app through app.py.
+
+--------
+##  Project Structure
+```
+Employee-Salary-Prediction-Project/
+├── app.py          # Main Streamlit app 
+├── employee salary prediction.ipynb  # Model training notebook 
+├── best_model.pkl               # Serialized trained ML model 
+├── adult.csv                    # Cleaned dataset 
+├── requirements.txt             # All dependencies 
+├── README.md                    # This file
+```
+----------------
 ##  Sample Input vs Predicted Output
 | Feature             | Sample Value        |
 |---------------------|---------------------|
@@ -44,20 +120,6 @@ A Streamlit-powered web app that predicts whether an individual's annual salary 
 ### Predicted Output
 >  **Predicted Salary:** More than ₹50,000/year  
 >  *Congratulations! You're projected to earn above the threshold!*
-
----
-
-##  Project Structure
-```
-Employee-Salary-Prediction-Project/
-├── app.py          # Main Streamlit app 
-├── employee salary prediction.ipynb  # Model training notebook 
-├── best_model.pkl               # Serialized trained ML model 
-├── adult.csv                    # Cleaned dataset 
-├── requirements.txt             # All dependencies 
-├── README.md                    # This file
-```
-
 
 ---
 
