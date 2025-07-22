@@ -14,7 +14,19 @@
 A Streamlit-powered web app that predicts whether an individual's annual salary is likely to exceed ₹50,000 based on demographic and financial attributes. Built during internship at Edunet Foundation under IBM mentorship.
 
 ---
+## Project Preview:
+**View-1**
+<img width="1909" height="985" alt="image" src="https://github.com/user-attachments/assets/435433d9-ec65-4b9b-84ba-2e0005165d13" />
+**View-2**
+<img width="1916" height="983" alt="image" src="https://github.com/user-attachments/assets/55f1e493-0718-4b66-b800-f6f1fd140fbe" />
 
+https://github.com/user-attachments/assets/32e03397-a262-4ed8-ae3b-63c27d14f6cd
+
+https://github.com/user-attachments/assets/eb37dd0b-7194-4025-9a8e-ef9696a808fb
+
+Try it now:-https://employee-salary-prediction-project.onrender.com/
+
+-----------------------------
 ## Features
 - Clean and branded UI with Edunet & IBM logos
 - Animated result feedback (balloons , snow )
