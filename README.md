@@ -157,7 +157,23 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 -------------------
+## Acknowledgment:
+Special thanks to **[Channabasava Yadav Sir](https://www.linkedin.com/in/channabasava-yadav-2b1a06b0/)** , **[Dr.Nanthini Mohan Ma’am](https://www.linkedin.com/in/dr-nanthini-mohan-9a727a105/)** for their continued mentorship throughout the internship. This project gave me real-world experience in sustainable analytics and AI/ML pipeline development.
+
+-----------------
 ## Deployment
 You can deploy this project on **Render**, **Streamlit Community Cloud**, or any hosting platform that supports Python + Streamlit.
 
 -----------
+## Thank You! 
+
+Thanks for checking out my project! If you found it useful, please consider:  
+[![GitHub stars](https://github.com/Siteshgupta123)] 
+- **Starring** the repo  
+-  **Reporting** issues  
+-  **Contributing** improvements  
+
+Coded by **Sitesh Gupta**  
+🔗 www.linkedin.com/in/guptasitesh |  Email-guptasitesh05@email.com
+
+-------------------------------------------
