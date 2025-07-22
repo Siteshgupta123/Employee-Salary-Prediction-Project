@@ -1,12 +1,13 @@
 <p align="center">
-  <a href="https://edunetfoundation.org/" target="_blank" style="margin-right: 50px;">
+  <a href="https://edunetfoundation.org/" target="blank">
     <img src="https://edunetfoundation.org/wp-content/uploads/2022/11/Edunet-Foundation-logo.png" alt="Edunet Foundation" height="50">
   </a>
-  
-  <a href="https://www.ibm.com/" target="_blank" style="margin-left: 50px;">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.ibm.com/" target="blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" height="45">
   </a>
 </p>
+
 
 # Employee Salary Prediction App
 
@@ -25,7 +26,6 @@ A Streamlit-powered web app that predicts whether an individual's annual salary 
 ---
 
 ##  Sample Input vs Predicted Output
-### Input
 | Feature             | Sample Value        |
 |---------------------|---------------------|
 | Age                 | 35                  |
@@ -42,7 +42,6 @@ A Streamlit-powered web app that predicts whether an individual's annual salary 
 | Native Country      | India               |
 
 ### Predicted Output
-
 >  **Predicted Salary:** More than ₹50,000/year  
 >  *Congratulations! You're projected to earn above the threshold!*
 
@@ -83,6 +82,7 @@ pip install -r requirements.txt
 ```
 streamlit run app.py
 ```
+-------------------
 ## Deployment
 You can deploy this project on **Render**, **Streamlit Community Cloud**, or any hosting platform that supports Python + Streamlit.
-
+-----------
