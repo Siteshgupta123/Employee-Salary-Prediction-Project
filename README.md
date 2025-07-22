@@ -85,4 +85,5 @@ streamlit run app.py
 -------------------
 ## Deployment
 You can deploy this project on **Render**, **Streamlit Community Cloud**, or any hosting platform that supports Python + Streamlit.
+
 -----------
