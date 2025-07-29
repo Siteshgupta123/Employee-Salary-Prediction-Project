@@ -1,11 +1,6 @@
 <p align="center">
-  <a href="https://edunetfoundation.org/" target="blank">
-    <img src="https://edunetfoundation.org/wp-content/uploads/2022/11/Edunet-Foundation-logo.png" alt="Edunet Foundation" height="50">
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.ibm.com/" target="blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" height="45">
-  </a>
+  <img src="https://github.com/user-attachments/assets/432f4916-f707-4ccc-9b5e-0770abf9362b" alt="Edunet Foundation" height="45" style="margin-right: 15px;">
+  <img src="https://github.com/user-attachments/assets/65734ff1-9bed-49fd-b433-cd5a624e1707" alt="Shell Logo" height="45">
 </p>
 
 
