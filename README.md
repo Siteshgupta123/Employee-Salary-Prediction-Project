@@ -6,7 +6,7 @@
 
 # Employee Salary Prediction App
 
-A Streamlit-powered web app that predicts whether an individual's annual salary is likely to exceed ₹50,000 based on demographic and financial attributes. Built during internship at Edunet Foundation under IBM mentorship.
+A Streamlit-powered web app that predicts whether an individual's annual salary is likely to exceed ₹50,000 based on demographic and financial attributes. Built during internship at Edunet Foundation under IBM SkillBuild mentorship.
 
 ---
 ## Project Preview:
